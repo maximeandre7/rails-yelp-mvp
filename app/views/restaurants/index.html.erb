@@ -1,0 +1,16 @@
+<div class="banner">
+  <div class="container-banner">
+    <h1>Find a restaurant</h1>
+    <%= link_to 'Add a restaurant', new_restaurant_path, class: 'btn btn-gradient' %>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="cards">
+      <% @restaurants.each do |restaurant| %>
+        <div class="card-category">
+          <h2><%= link_to restaurant.name, restaurant_path(restaurant) %></h2>
+        </div>
+      <% end %>
+    </div>
+</div>
