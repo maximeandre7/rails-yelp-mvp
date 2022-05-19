@@ -29,6 +29,7 @@
 
  .cards {
   display: grid;
+  margin-top: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
  }
@@ -59,4 +60,10 @@
 .btn-gradient:hover {
   background: linear-gradient(#147EFF, #0F67DA);
   color: white;
+}
+
+.card-category a {
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
 }
